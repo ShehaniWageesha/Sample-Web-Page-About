@@ -1,0 +1,588 @@
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+body {
+  background-image: url('images/bgDesktop.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center top;
+}
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 250px;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 1px;
+  cursor: pointer;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: transparent;
+}
+i {
+  color: white;
+}
+nav {
+  background: transparent;
+  float: right;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+nav.shift ul li a {
+  position:relative;
+  z-index: 1;
+}
+nav.shift ul li a:hover {
+  color: #000000;
+}
+nav.shift ul li a:after {
+  display: block;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: #ffd52e;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+.active {
+  border-radius: 5px;
+  color: transparent;
+  background: #ffd52e;
+}
+nav.shift ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+.leftNav {
+  float: left;
+  display: inline;
+}
+.main-title {
+  font-family: Brush Script MT;
+  color: white;
+  font-size: 5rem;
+  position: fixed;
+  font-weight: 900;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+.section-02 {
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+.unique {
+  margin-top: 100px;
+  text-align: center;
+}
+.family {
+  float: left;
+  margin-top: -20px;
+  margin-left: -50px;
+  margin-right: 50px;
+}
+.content p {
+  margin-top: 50px;
+  width: 140vh;
+}
+#image1 {
+  display: inline-block;
+  text-align: center;
+}
+#image2 {
+  display: inline-block;
+  text-align: center;
+}
+#image3 {
+  display: inline-block;
+  text-align: center;
+}
+.content2 {
+  margin-top: -10px;
+}
+#pro {
+  float: right;
+  margin-right: 170px;
+  margin-top: 5px;
+}
+.section-03 {
+  left: 50%;
+  top: 240%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+.holidayText {
+  float: left;
+  margin-left: -150px;
+  width: 70%;
+  text-align: justify;
+  margin-top: 30px;
+}
+#head1 {
+  font-size: 3.5rem;
+  font-weight: lighter;
+  margin-top: -10px;
+}
+#head2 {
+  font-size: 5rem;
+  color: #5b8cc7;
+  margin-top: -40px;
+}
+#head3 {
+  font-size: 7rem;
+  margin-top: -60px;
+  font-weight: lighter;
+}
+.para4 {
+  margin-top: -70px;
+}
+.holidayImage {
+  float: right;
+  margin-top: 0px;
+  margin-right: -200px;
+}
+.button1 {
+  background-color: white; 
+  color: rgb(78, 78, 78);
+  padding: 10px;
+  border: 1px solid rgb(78, 78, 78);
+  border-radius: 5px;
+}
+.button1:hover {
+  background-color: rgb(128, 128, 128);
+  color: white;
+}
+.section-04 {
+  left: 50%;
+  top: 330%;
+  transform: translateX(-50%);
+  position: absolute;
+  text-align: center;
+}
+.teamPara {
+  width: 80%;
+  text-align: justify;
+  text-align: center;
+  margin-top: 40px;
+  margin-left: 50px;
+}
+.approval {
+  color: darkgreen;
+  background-color: rgb(162, 230, 162);
+  padding: 10px;
+  border-radius: 5px;
+  width: 80%;
+  margin-left: 40px;
+  text-align: center;
+}
+.teamImg {
+  left: 50%;
+  top: 390%;
+  transform: translateX(-50%);
+  position: absolute;
+  text-align: center;
+}
+.card {
+  display: inline-block;
+  border: none;
+  padding: 25px;
+}
+footer {
+  left: 50%;
+  top: 480%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+footer {
+  background-image: url('images/footer-section-bg.jpg');
+  background-repeat: no-repeat;
+  width: 100%;
+  margin-top: 20px;
+  height: 120%;
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center bottom;
+  position: absolute;
+}
+.input {
+  color: #fff;
+  font-size: medium;
+}
+input[type=text] {
+  background: transparent;
+  border: 1px solid #ffffff;
+  height: 5vh;
+  width: 20%;
+  color: #fff;
+  font-size: medium;
+}
+textarea {
+  background: transparent;
+  border: 1px solid #ffffff;
+  height: 10vh;
+  width: 20%;
+  color: #fff;
+  font-size: medium;
+}
+input[type=submit] {
+  background: transparent;
+  color: #fff;
+  border-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: medium;
+  width: 12%;
+  height: 6vh;
+}
+.footerbg {
+  margin-top: 200px;
+  color: white;
+  margin-left: 100px;
+}
+.footer-contact {
+  width: 200vh;
+}
+.footer-tour-packages {
+  margin-top: -410px;
+  margin-left: 600px;
+}
+.footer-insta {
+  margin-top: -292px;
+  margin-left: 900px;
+}
+.footer-news {
+  margin-top: -395px;
+  margin-left: 320px;
+}
+.social-footer-icons {
+  margin-left: -25px;
+}
+
+.social-footer-icons a {
+  text-decoration: none;
+}
+
+.social-footer-icons li:last-of-type {
+  margin-right: 0;
+}
+
+.social-footer-icons li {
+  text-decoration: none;
+  display: inline;
+  margin-right: 35px;
+}
+
+.social-footer-icons .fa {
+  font-size: 1.5rem;
+  color: #fefefe;
+  margin-top: 50px;
+}
+
+.social-footer-icons .fa:hover {
+  color: #4a4a4a;
+  transition: color 0.3s ease-in;
+}
+.last {
+  color: #fff;
+  margin-top: 60px;
+}
+.rights {
+  display: inline-block;
+  margin-left: 65px;
+}
+.ifsolutions {
+  display: inline-block;
+  margin-left: 500px;
+}
+.icon-bar {
+  position: fixed;
+  top: 92.5%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.icon-bar a {
+  display: block;
+  padding: 16px;
+  color: #fff;
+  border-radius: 50px;
+  margin-left: 40px;
+}
+.icon-bar i {
+  font-size: 2.2rem;
+}
+.whatsapp {
+  background: #53d365;
+  color: #ffffff;
+}
+.blogP1 img {
+  cursor: pointer; width: 80px; height: 80px; display: inline-block; border-radius: 5px;
+}
+.blogP2 img {
+  cursor: pointer; width: 80px; height: 80px; border-radius: 5px;
+}
+.blogP3 img {
+  cursor: pointer; width: 80px; height: 80px; border-radius: 5px;
+}
+.posts {
+  display: inline-block; margin-left: 15px;
+}
+.posts h4 {
+  color: #fff; cursor: pointer;
+}
+.footer-news h1 {
+  margin-bottom: 5px;
+}
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.openbtn {
+  font-size: 30px;
+  float: left;
+}
+.shift {
+  display: none;
+}
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.main-title {
+  margin-top: -200px;
+}
+.unique {
+  margin-top: -500px;
+}
+.family img {
+  margin-left: 60px;
+  width: 95%;
+}
+.content p {
+  width: 38vh;
+}
+#pro h3 {
+  width: 300%;
+  margin-left: 15px;
+}
+#head1 {
+  margin-left: 130px;
+  width: 170%;
+  margin-top: -100px;
+}
+#head2 {
+  margin-left: 130px;
+  width: 170%;
+  margin-top: -20px;
+}
+#head3 {
+  width: 70%;
+  font-size: 5rem;
+  margin-left: 130px;
+}
+.para4 {
+  width: 150%;
+  margin-left: 140px;
+}
+.button1 {
+  margin-left: 150px;
+}
+.holidayImage {
+  margin-top: 400px;
+}
+.holidayImage img {
+  width: 40vh;
+  margin-left: -500px;
+  margin-top: 50px;
+}
+.team {
+  margin-top: 300px;
+}
+.teamPara {
+  width: 150%;
+  margin-left: -35px;
+  text-align: justify;
+}
+.approval {
+  width: 160%;
+  margin-left: -50px;
+}
+.card {
+  display: initial;
+}
+.teamImg {
+  margin-top: 400px;
+}
+.card-title {
+  text-align: center;
+  margin-left: 40px;
+}
+footer {
+  margin-top: 1700px;
+  background-image: url('images/footer-bg-mobile.jpg');
+  height: 270vh;
+}
+.footer-contact {
+  margin-top: 250px;
+  margin-left: -70px;
+}
+.footer-news h1 {
+  margin-top: 420px;
+  margin-left: -400px;
+}
+.icon-bar {
+  position: fixed;
+  top: 25%;
+  left: -3%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.blogP1 img {
+  background-color: #000000;
+  margin-top: 20px;
+  display: initial;
+  margin-left: -370px;
+}
+.blogP2 img {
+  margin-top: -100px;
+  display: initial;
+  margin-left: -370px;
+}
+.blogP3 img {
+  margin-top: -150px;
+  display: initial;
+  margin-left: -370px;
+}
+.posts h4 {
+  width: 150vh;
+  color: #ffffff;
+  margin-left: -750px;
+  margin-top: -120px;
+}
+.jd-light-gray {
+  width: 150vh;
+  color: #ffffff;
+  margin-left: -270px;
+  margin-top: -150px;
+}
+.footer-tour-packages {
+  margin-left: -80px;
+  margin-top: 20px;
+}
+.footer-insta {
+  color: #ffffff;
+  margin-left: -80px;
+  margin-top: 20px;
+}
+.last {
+  margin-left: -130px;
+  margin-top: 20px;
+}
+.ifsolutions {
+  margin-left: 35px;
+  margin-top: 10px;
+}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+/* Extra large devices (large desktops, 1366px and up) */
+@media (min-width: 1366px) {
+
+}
+
+/* Extra large devices (large desktops, 1500px and up) */
+@media (min-width: 1500px) {
+
+}
+
+/* Extra large devices (large desktops, 2560px and up) */
+@media (min-width: 2560px) {
+
+}
